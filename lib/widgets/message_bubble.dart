@@ -191,6 +191,7 @@ class MessageBubble extends StatelessWidget {
       AttachmentType.text => Icons.description,
       AttachmentType.other => Icons.insert_drive_file,
       AttachmentType.image => Icons.image,
+      _ => Icons.insert_drive_file,
     };
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
