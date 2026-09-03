@@ -1,9 +1,7 @@
 name: Build Android APK
 
 on:
-  # Trigger manually from the Actions tab
   workflow_dispatch:
-  # Also trigger on push to main (optional — remove if you only want manual builds)
   push:
     branches: [main]
 
@@ -26,6 +24,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+          flutter-version: '3.27.0'
 
       - name: Get dependencies
         run: flutter pub get
