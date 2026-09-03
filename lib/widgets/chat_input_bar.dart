@@ -80,7 +80,6 @@ class _ChatInputBarState extends State<ChatInputBar> {
 
               // Input row.
               Row(
-                endAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   // Attachment menu button.
