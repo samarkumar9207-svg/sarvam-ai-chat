@@ -135,7 +135,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           const SizedBox(height: 24),
 
-          // ─── System Prompt ────────────────────────
+          // ─── System Prompt ─────────────────────────
           _buildSection(
             context,
             title: 'System Prompt',
@@ -235,7 +235,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 value: ThemeMode.system,
                 groupValue: provider.themeMode,
                 title: const Text('System Default'),
-                leading: const Icon(Icons.brightness_auto),
+                secondary: const Icon(Icons.brightness_auto),
                 onChanged: (v) => provider.setThemeMode(v!),
                 contentPadding: EdgeInsets.zero,
                 dense: true,
@@ -244,7 +244,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 value: ThemeMode.light,
                 groupValue: provider.themeMode,
                 title: const Text('Light'),
-                leading: const Icon(Icons.light_mode),
+                secondary: const Icon(Icons.light_mode),
                 onChanged: (v) => provider.setThemeMode(v!),
                 contentPadding: EdgeInsets.zero,
                 dense: true,
@@ -253,7 +253,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 value: ThemeMode.dark,
                 groupValue: provider.themeMode,
                 title: const Text('Dark'),
-                leading: const Icon(Icons.dark_mode),
+                secondary: const Icon(Icons.dark_mode),
                 onChanged: (v) => provider.setThemeMode(v!),
                 contentPadding: EdgeInsets.zero,
                 dense: true,
